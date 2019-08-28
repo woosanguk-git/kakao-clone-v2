@@ -1,0 +1,49 @@
+.friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friend .friend__avatar {
+  width: 50px;
+  border-radius: 38%;
+}
+
+.friend__avatar.g-avatar {
+  /*뒤어쓰기 하면 클래스안에 클래스가 적용된다는 뜻.
+    두 클래스에 동시에 적용시커야 하기 때문에 띄어쓰기 X*/
+  width: 70px;
+}
+
+.friend__avatar.m-avatar {
+  width: 60px;
+}
+
+.friend .friend__column {
+  display: flex;
+  align-items: center;
+}
+
+.friend__column .friend__avatar {
+  margin-right: 15px;
+}
+.friend__content .friend__name {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.friend__content .friend__status,
+.friend__content .friend__bottom-text,
+.friend .chat__timestamp{
+    opacity: 0.6;
+
+}
+
+.friend__content .friend__bottom-text{
+    font-size: 14px;
+}
+
+.friend__content .friend__status,
+.friend .chat__timestamp{
+    font-size: 12px;
+}
