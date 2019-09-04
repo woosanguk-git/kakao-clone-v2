@@ -26,3 +26,17 @@ a {
   /*inherit -> 부모 요소로부터 색깔을 받아온다.*/
   text-decoration: none;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+main {
+  animation: fadeIn 0.5s ease-in-out;
+}
